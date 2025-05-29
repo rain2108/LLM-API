@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  llm-api:
+    image: rain210/llm-api       # Replace with your actual image name
+    ports:
+      - "8000:8000"            # Maps container port 8000 to host port 8000
+    env_file:
+      - .env                   # This tells Compose to load environment variables from your .env file
+    restart: always            # Optional: ensures the container restarts if it fails
