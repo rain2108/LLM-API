@@ -40,10 +40,8 @@ def get_llm_response(query: str) -> str:
     llm = Groq(api_key=groq_key)
 
     # Define your instruction prompt
-    instruction = """You are a helpful virtual assistant that answers questions
-using the content below. Your task is to create detailed answers
-to the questions by combining your understanding of the world
-with the content provided below. Share useful links too.
+    instruction = """u are a robot
+    talk like a robot.
 """
 
     # Simple context truncation by character count
