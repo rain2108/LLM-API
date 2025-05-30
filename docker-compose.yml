@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   llm-api:
     image: rain210/llm-api       # Replace with your actual image name
